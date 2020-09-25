@@ -1,23 +1,15 @@
   
-import React from 'react';
-import { faSadTear } from "@fortawesome/free-regular-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, {useState} from 'react';
 
-class NoMatch extends React.Component {
-    constructor(props) {
-      super(props);
+const NoMatch = (props) => {
+    const [location] = useState(props.location);
 
-      this.state = {
-          location: props.location
-      };
-    };
-    
-    render() {return (
+    return (
         <div className="text-center error-404-container jumbotron">
-            <h1 className="error-404-heading">404 <FontAwesomeIcon icon={faSadTear}/></h1>
-            <h2>No match found for <code>{this.state.location.pathname}</code> </h2>
+            <h1 className="error-404-heading">404</h1>
+            <h2>No match found for <code>{location.pathname}</code></h2>
         </div>
-    )};
-};
+    )
+}
 
 export default NoMatch;

@@ -1,8 +1,9 @@
 import React from 'react';
-import { HashRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Navigation from './Common/Navigation'
 import Routing from './Routing.jsx';
 import './App.css';
+import Footer from './Common/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <div>
           <Navigation />
           <Routing />
+          <Footer />
         </div>
       </Router>
     </div>

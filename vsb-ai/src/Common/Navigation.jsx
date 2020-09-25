@@ -1,13 +1,8 @@
 import React, { Component } from 'react'
 import { NavLink as Link } from "react-router-dom";
-import { NavDropdown,Form,FormControl, Button } from "react-bootstrap";
-import { LinkContainer } from 'react-router-bootstrap'
 import {
     Navbar,
-    NavbarToggler,
-    Nav,
-    Collapse,
-    NavItem } from 'react-bootstrap';
+    Nav } from 'react-bootstrap';
 
 
 export class Navigation extends Component {
@@ -27,12 +22,13 @@ export class Navigation extends Component {
     
     render() {
         return (
-            <Navbar bg="primary" expand="lg">
+            <Navbar bg="light" expand="lg" variant="light">
                 <Navbar.Brand as={Link} to="/">VŠB - AI</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                    <Nav.Link as={Link} to="/natural-gas-forecasting">Home</Nav.Link>
+                    <Nav className="ml-auto">
+                        <Nav.Link as={Link} to="/natural-gas-forecasting">Natural gas forecasting</Nav.Link>
+                        <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
