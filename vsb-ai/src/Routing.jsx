@@ -12,7 +12,7 @@ export default class Routing extends Component {
                 <Redirect to="/natural-gas-forecasting" />
             </Route>
             <Route path="/natural-gas-forecasting" exact component={NaturalGasForecasting} />
-            <Route component={NoMatch} />
+            <Route component={NoMatch} state={{"kkk": 5}}/>
         </Switch>
     )
   }

@@ -3,12 +3,21 @@
     --darken-gradient-20: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     --darken-gradient-25: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
     --darken-gradient-30: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    --minty: #78C2AD;
 }
 
 .error-404-heading {
     font-size: 7rem;
     font-weight: bold;
     color: #F04124;
+}
+
+.minty-bg {
+    background-color: var(--minty);
+}
+
+.minty-color {
+    color: var(--minty);
 }
 
 .vertical-center {
