@@ -1,3 +1,11 @@
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
 :root {
     --darken-gradient-10: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
     --darken-gradient-20: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
@@ -41,3 +49,6 @@
     background-size: cover;
     height: 50vh;
 }
+
+
+ 
