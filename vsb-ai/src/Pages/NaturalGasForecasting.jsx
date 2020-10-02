@@ -22,7 +22,6 @@ const BadgeList = ({tags}) => {
 const ConsumptionLinePlotPlotly = ({xdata, ydata}) => {
     return (
             <SizeMe>{({ size }) => {
-                console.log(size.width)
                 return (
                     <div className="container">
                         <Plot
