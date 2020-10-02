@@ -19,23 +19,6 @@ const BadgeList = ({tags}) => {
     );
 };
 
-// const ConsumptionLinePlot = ({data}) => {
-//     return (
-//         <div style={{ width: '100%', height: 300 }}>
-//             <ResponsiveContainer>
-//             <LineChart
-//             data={data}
-//             >
-//             <XAxis dataKey="Datetime" />
-//             <Tooltip />
-//             <CartesianGrid stroke="#f5f5f5" />
-//             <Line type="monotone" dataKey="Consumption" stroke="#78C2AD" />
-//             </LineChart>
-//             </ResponsiveContainer>
-//         </div>
-//     );
-// };
-
 const ConsumptionLinePlotPlotly = ({xdata, ydata}) => {
     return (
             <SizeMe>{({ size }) => {
