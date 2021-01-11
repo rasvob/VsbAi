@@ -145,20 +145,46 @@ export const NaturalGasForecasting = (props) => {
                         <ExampleTable columns={selectColumns(tableData.schema)} rows={selectRows(tableData.data ,selectColumns(tableData.schema)).slice(0, 5)} />
 
                         <h3 className="mt-4">Download dataset</h3>
-                        <OverlayTrigger placement="top" delay={{ show: 50, hide: 400 }} overlay={<Tooltip>Dataset will be publicly available immediately after successful publication of our paper</Tooltip>}>
+                        <p>Free use of the dataset for academic research purposes is hereby permitted. Use for commercial purposes should be agreed by the authors.</p>
+
+                        <Button variant="primary" href="/vsbai/ppnet_metar.csv" size="md" download>
+                            Download
+                        </Button>
+
+                        <p className="font-weight-bold mt-1">Who intends to use the dataset have to cite the paper noted below.</p>
+                        {/* <OverlayTrigger placement="top" delay={{ show: 50, hide: 400 }} overlay={<Tooltip>Dataset will be publicly available immediately after successful publication of our paper</Tooltip>}>
                             <Button variant="primary disabled" style={{cursor: "pointer"}} size="md">
                                 Download
                             </Button>
-                        </OverlayTrigger>
-
-                          
+                        </OverlayTrigger> */}
                     </Section>
                     
                     <Section heading="Publications">
-                        <p>Coming soon... or at least we hope so <span role="img" aria-label="Smile emoji">&#128521;</span></p>
+                        <h5>Short-term natural gas consumption forecasting from long-term data collection</h5>
+                        <p className="font-italic">Radek Svoboda, Vojtech Kotik, Jan Platos</p>
+                        <a href="https://doi.org/10.1016/j.energy.2020.119430" target="blank">https://doi.org/10.1016/j.energy.2020.119430</a>
+                        
+                        <div className="bg-light pl-3 pt-2 pb-2 mt-1">
+                            <p>
+                            {`@article{SVOBODA2021119430,`}<br/>
+                            {`title = "Short-term natural gas consumption forecasting from long-term data collection",`}<br/>
+                            {`journal = "Energy",`}<br/>
+                            {`volume = "218",`}<br/>
+                            {`pages = "119430",`}<br/>
+                            {`year = "2021",`}<br/>
+                            {`issn = "0360-5442",`}<br/>
+                            {`doi = "https://doi.org/10.1016/j.energy.2020.119430",`}<br/>
+                            {`url = "http://www.sciencedirect.com/science/article/pii/S0360544220325378",`}<br/>
+                            {`author = "Radek Svoboda and Vojtech Kotik and Jan Platos",`}<br/>
+                            {`keywords = "Natural gas, Consumption, Forecasting, Demand, Big data, Machine learning"`}<br/>
+                            {`}`}
+                            </p>
+                        </div>
                     </Section>
                 </main>
             </div>
+
+            
         )
 }
 export default NaturalGasForecasting;

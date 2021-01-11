@@ -38,7 +38,7 @@ export const ContactPage = (props) => {
                 </div>
 
                 <div>
-                    <h3>Where you can find us?</h3>
+                    <h3>Where can you find us?</h3>
                     <p>We are part of <a href="https://katedrainformatiky.cz/">Department of Computer Science, FEECS, VŠB - Technical University of Ostrava</a></p>
 
                     <h4>Address</h4>
