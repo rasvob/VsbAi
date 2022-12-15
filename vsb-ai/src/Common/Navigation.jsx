@@ -26,6 +26,7 @@ export class Navigation extends Component {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
                         <Nav.Link as={Link} to="/natural-gas-forecasting">Natural gas forecasting</Nav.Link>
+                        <Nav.Link as={Link} to="/smart-harbour">Smart harbour</Nav.Link>
                         <Nav.Link as={Link} to="/contact">Contact us</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

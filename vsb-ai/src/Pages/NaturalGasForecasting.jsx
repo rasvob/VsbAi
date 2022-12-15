@@ -1,23 +1,12 @@
 import React, { useState } from 'react'
-import {Badge, Button, OverlayTrigger, Tooltip, Table} from 'react-bootstrap'
+import {Button, Table} from 'react-bootstrap'
 import Section from '../Common/Section';
 // eslint-disable-next-line 
-import { Link } from 'react-router-dom';
 import Plot from 'react-plotly.js';
 import { SizeMe } from 'react-sizeme'
 import { LoadPlotData, LoadTableData } from "../DAL/ExampleDataLoader";
-
-const toFirstUpper = (string) => {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-};
-
-const BadgeList = ({tags}) => {
-    return (
-        tags.map(t => {
-        return (<Badge key={t} variant="light" className="mr-2">{t}</Badge>);
-        })
-    );
-};
+import { toFirstUpper } from "../DAL/UtilityFunctions";
+import { PageHero } from "../Common/PageHero";
 
 const ConsumptionLinePlotPlotly = ({xdata, ydata}) => {
     return (
@@ -90,8 +79,6 @@ export const NaturalGasForecasting = (props) => {
             return res;
         }
 
-        console.log(plotData);
-
         const selectXAxis = (data) => {
             return data.map(t => new Date(t.Datetime));
         };
@@ -102,15 +89,7 @@ export const NaturalGasForecasting = (props) => {
 
         return (
             <div>
-                <div className="jumbotron jumbotron-fluid forecast-hero text-left py-6 vertical-center">
-                    <div className="container">
-                        <h1 className="display-4 text-white">Natural gas forecasting</h1>
-                        <p className="lead">Short-term natural gas consumption forecasting from long-term data collection</p>
-                        <div>
-                            <BadgeList tags={tags} />                            
-                        </div>
-                    </div>
-                </div>
+                <PageHero title='Natural gas forecasting' lead='Short-term natural gas consumption forecasting from long-term data collection' cssClasses='forecast-hero' tags={tags} />
 
                 <main className="container">
                     <div>

@@ -40,14 +40,19 @@ html, body {
     background-color: #fff;
 }
 
-.forecast-hero {
+.base-hero {
     color: white;
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("Assets/charts2_header.jpg"); */
-    background-image:  var(--darken-gradient-30), url("Assets/charts_header.jpg");
+    /* background-image:  var(--darken-gradient-30), url("Assets/charts_header.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
+}
+
+.forecast-hero {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("Assets/charts2_header.jpg"); */
+    background-image:  var(--darken-gradient-30), url("Assets/charts_header.jpg");
 }
 
 
